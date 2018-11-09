@@ -31,6 +31,7 @@
     <button onclick="Preset_Mine();">Mine</button>
     <button onclick="Preset_CFWW();">CFW W</button>
     <button onclick="Preset_Rollerplausch();">Rollerplausch.com</button>
+    <button onclick="Preset_doctorseus();">doctorseus</button>
 </p>
 
 <noscript>This website (despite it's look) requires some very simple JavaScript which is embedded in this HTML.</noscript>
@@ -253,6 +254,22 @@
         ChangeForm("russian_throttle", false);
         ChangeForm("voltage_limit", "43.01", false);
         ChangeForm("remove_hard_speed_limit", true);
+        ChangeForm("remove_charging_mode", false);
+    }
+
+    function Preset_doctorseus() {
+        ChangeForm("version", "DRV138");
+        ChangeForm("kers_min_speed", "30.0", true);
+        ChangeForm("normal_max_speed", "30", true);
+        ChangeForm("eco_max_speed", "26", true);
+        ChangeForm("motor_start_speed", "3.0", true);
+        ChangeForm("motor_power_constant", "40000", true);
+        ChangeForm("cruise_control_delay", "5", false);
+        ChangeForm("instant_eco_switch", true);
+        ChangeForm("boot_with_eco", false);
+        ChangeForm("russian_throttle", false);
+        ChangeForm("voltage_limit", "43.01", false);
+        ChangeForm("remove_hard_speed_limit", false);
         ChangeForm("remove_charging_mode", false);
     }
 </script>
